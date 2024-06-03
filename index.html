@@ -23,17 +23,17 @@
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Ваша почта</label>
               <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">Мы никогда не поделимся вашей почтой ни с кем!</div>
+              <div id="emailHelp" class="form-text">Мы никогда не поделимся вашей почтой ни с кем.</div>
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Пароль</label>
               <input type="password" class="form-control" id="exampleInputPassword1">
             </div>
-<!--             <div class="mb-3 form-check">
+            <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck">
               <label class="form-check-label" for="exampleCheck1">Хочу получать последние новости.</label>
             </div>
-            <button type="submit" class="btn btn-primary">Отправить</button> -->
+            <button type="submit" class="btn btn-primary">Отправить</button>
           </form>
     </div>
 
@@ -41,17 +41,17 @@
     <script>
         let tg = window.Telegram.WebApp;
         tg.expand();
-        tg.colorScheme = "0f0e0e"
+        tg.themeParams.bg_color;
         tg.MainButton.textColor = "#FFFFFF";
         tg.MainButton.color = "#2cab37";
         tg.MainButton.setText("Отправить");
         tg.MainButton.show();
 
-        // let send = document.getElementById("send");
+        let send = document.getElementById("send");
 
         Telegram.WebApp.onEvent("mainButtonClicked", () => {
             let data = {
-                name: "gey",
+                name: tg.themeParams.bg_color,
                 price: "loh"
             };
             tg.sendData(JSON.stringify(data));
