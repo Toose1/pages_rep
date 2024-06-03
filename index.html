@@ -50,7 +50,7 @@
         document.getElementById("exampleInputEmail").value = tg.initDataUnsafe.user.first_name;
 
 
-        tg.onEvent("mainButtonClicked", () => {
+        Telegram.WebApp.onEvent("mainButtonClicked", () => {
             tg.sendData(JSON.stringify({name: "alex", phone: "79284701644"}));
         });
 
