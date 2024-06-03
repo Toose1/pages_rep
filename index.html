@@ -36,7 +36,7 @@
     <script>
         let tg = window.Telegram.WebApp;
         tg.expand();
-        Telegram.WebApp.setBackgroundColor("#F36D91");
+        Telegram.WebApp.setHeaderColor("#F36D91");
         tg.MainButton.textColor = "#FFFFFF";
         tg.MainButton.color = "#F36D91";
         tg.MainButton.setText("Отправить");
@@ -44,7 +44,7 @@
 
         Telegram.WebApp.onEvent("mainButtonClicked", () => {
             let data = {
-                name: "nice",
+                name: "nice))",
                 price: "2000$"
             };
             tg.sendData(JSON.stringify(data));
