@@ -41,10 +41,19 @@
     <script>
         let tg = window.Telegram.WebApp;
         tg.expand();
+        tg.MainButton.textColor = "#FFFFFF";
+        tg.MainButton.color = "#2cab37";
+
         let send = document.getElementById("send");
         document.getElementById("exampleInputEmail").value = tg.initDataUnsafe.user.first_name;
+
+
+        tg.onEvent("mainButtonClicked", () => {
+            tg.sendData(JSON.stringify({name: "alex", phone: "79284701644"}));
+        });
+
         send.addEventListener("click", () => {
-            tg.sendData(JSON.stringify({name: "alex", phone: "79284701644"}))
+            tg.sendData(JSON.stringify({name: "alex", phone: "79284701644"}));
         });
 
     </script>
