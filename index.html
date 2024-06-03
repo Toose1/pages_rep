@@ -29,11 +29,11 @@
               <label for="exampleInputPassword1" class="form-label">Пароль</label>
               <input type="password" class="form-control" id="exampleInputPassword1">
             </div>
-            <div class="mb-3 form-check">
+<!--             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck">
-              <label class="form-check-label" for="exampleCheck1">Хочу получать последние новости</label>
+              <label class="form-check-label" for="exampleCheck1">Хочу получать последние новости.</label>
             </div>
-            <button type="submit" class="btn btn-primary">Отправить</button>
+            <button type="submit" class="btn btn-primary">Отправить</button> -->
           </form>
     </div>
 
@@ -46,17 +46,19 @@
         tg.MainButton.setText("Отправить");
         tg.MainButton.show();
 
-        let send = document.getElementById("send");
-        document.getElementById("exampleInputEmail").value = tg.initDataUnsafe.user.first_name;
-
+        // let send = document.getElementById("send");
 
         Telegram.WebApp.onEvent("mainButtonClicked", () => {
-            tg.sendData(JSON.stringify({name: "alex", phone: "79284701644"}));
+            let data = {
+                name: "gey",
+                price: "loh"
+            };
+            tg.sendData(JSON.stringify(data));
         });
 
-        send.addEventListener("click", () => {
-            tg.sendData(JSON.stringify({name: "alex", phone: "79284701644"}));
-        });
+        // send.addEventListener("click", () => {
+        //     tg.sendData(JSON.stringify({name: "alex", phone: "79284701644"}))
+        // });
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
