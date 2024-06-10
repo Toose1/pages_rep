@@ -15,7 +15,7 @@ body {
     margin: 30px 10px 40px 10px;
     display: grid;
     grid-template-columns: repeat(2, 160px);
-    column-gap: 7px;
+    column-gap: 11px;
     row-gap: 25px;
     justify-content: center;
 }
