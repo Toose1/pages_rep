@@ -14,7 +14,7 @@ body {
 .products_wrapper {
     margin: 30px 25px 40px 25px;
     display: grid;
-    grid-template-columns: repeat(2, 190px);
+    grid-template-columns: repeat(2, 170px);
     column-gap: 7px;
     row-gap: 25px;
     justify-content: center;
