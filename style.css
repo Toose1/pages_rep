@@ -12,10 +12,10 @@ body {
 }
 
 .products_wrapper {
-    margin: 30px 10px 40px 10px;
+    margin: 30px 25px 40px 25px;
     display: grid;
-    grid-template-columns: repeat(2, 170px);
-    column-gap: 15px;
+    grid-template-columns: repeat(2, 190px);
+    column-gap: 7px;
     row-gap: 25px;
     justify-content: center;
 }
@@ -28,6 +28,17 @@ body {
 
 .item {
     text-align: center;
+}
+.title {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.price {
+    margin-top: 5;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .btn {
@@ -57,3 +68,4 @@ body {
 
     transition: background .2s linear;
 }
+
