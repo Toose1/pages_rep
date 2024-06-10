@@ -14,14 +14,14 @@ body {
 .products_wrapper {
     margin: 30px 25px 40px 25px;
     display: grid;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, 190px);
     column-gap: 7px;
     row-gap: 25px;
     justify-content: center;
 }
 
 .img {
-    width: 200px;
+    width: 100%;
     border-radius: 15px;
 
 }
