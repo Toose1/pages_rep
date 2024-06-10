@@ -7,26 +7,24 @@ body {
     background-color: var(--tg-theme-bg-color);
 }
 
-.h1 {
+
+.section-header {
     margin-top: 20px;
 }
 
 .products_wrapper {
-    margin: 40px 0 40px 0;
+    margin: 30px 20px 40px 20px;
     display: grid;
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(auto-fill, 300px);
     column-gap: 20px;
-    row-gap: 30px;
+    row-gap: 35px;
     justify-content: center;
 }
 
-/* .container {
-    max-width: 390px;
-} */
-
-
 .img {
     width: 100%;
+    border-radius: 10px;
+
 }
 
 .item {
